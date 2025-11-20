@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://scp-diallo-seck.github.io/sitemap.xml
+
