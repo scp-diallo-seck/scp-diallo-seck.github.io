@@ -30,7 +30,7 @@ function setModeLight(on){
     modeBtn.setAttribute('aria-pressed','true');
   } else {
     document.body.classList.remove('light');
-    modeBtn.textContent='Activer le mode clair';
+    modeBtn.textContent='☀️';
     modeBtn.setAttribute('aria-pressed','false');
   }
 }
