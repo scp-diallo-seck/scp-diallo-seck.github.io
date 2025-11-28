@@ -84,42 +84,27 @@ nav a:hover { color: #D4AF37; }
         /* ===== RESPONSIVE ===== */
     @media (max-width:980px){.contact-grid{grid-template-columns:1fr}.etude-grid{grid-template-columns:1fr}}
     @media (max-width:720px){header.hero{height:64vh}h1{font-size:24px}.nav-links{display:none}}
-/* body.light header.hero::after {
-  background: linear-gradient(90deg, rgba(93, 91, 5, 0.15), rgba(66, 58, 8, 0.2));
-  color: #fff;
-}
 
-body.light .etude-card, 
-body.light .etude-card-item {
-  background-color: #fff;
-  color: #111;
-}
-
-body.light .etude-card p,
-body.light .etude-card-item p , h3{
-  color: #111; 
-  
-} */
-/* Hero image clair pour le light mode */
 body.light header.hero::before {
-    filter: grayscale(.08) contrast(.9) brightness(.85); /* plus clair que le dark mode */
+    filter: grayscale(.08) contrast(.9) brightness(.85); 
 }
 
-/* Gradient reste sombre pour nav */
 body.light header.hero::after {
 background-image: 
-    linear-gradient(to top, rgba(43, 7, 7, 0.363), rgba(36, 3, 3, 0.491)),
-    url('image.png');    /* background: linear-gradient(to top , rgba(43, 7, 7, 0.363) , rgba(36, 3, 3, 0.491)); */
+    linear-gradient(to bottom, rgba(27, 24, 4, 0.562), rgba(29, 24, 3, 0.829)),
+    url('OIP.webp');   
+    background-size: cover;
+    
 }
-
-/* Domaine d'expertise en light mode */
 body.light .expertise-item h3 {
     color: #111; 
 }
 
+body.light header.hero .hero-inner .lead {
+    color: #ffffffd3 !important;
+}
 
 
-/* Section étude déjà corrigée */
 body.light .etude-card, 
 body.light .etude-card-item {
     background-color: #fff;
@@ -130,7 +115,6 @@ body.light .etude-card p,
 body.light .etude-card-item p {
     color: #111; 
 }
-
 #team {
     padding: 40px 0;
 }

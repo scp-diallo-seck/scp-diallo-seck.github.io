@@ -36,9 +36,7 @@ function setModeLight(on){
 }
 modeBtn.addEventListener('click', ()=> setModeLight(!document.body.classList.contains('light')));
 
-// Supprimer le listener sur le hero (c'est lui qui activait light mode au clic)
 
-// Reveal on scroll
 const reveals = document.querySelectorAll('.reveal');
 const ro = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
